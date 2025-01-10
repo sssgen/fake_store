@@ -6,7 +6,7 @@
 
 1. Клонувати репозиторій
 ```
-git clone https://github.com/sssgen/fake-store.git
+git clone https://github.com/sssgen/fake_store.git
 ```
 2. Встановити залежності
 ```
