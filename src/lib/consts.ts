@@ -1,0 +1,2 @@
+export const SKELETON_PRELOADER_COUNT = 6;
+export const PRODUCTS_ITEMS_PER_PAGE = 9;
