@@ -1,7 +1,9 @@
-import { XIcon } from "lucide-react";
-import BasketGrid from "./BasketGrid";
 import { memo } from "react";
+
 import { useBasketStore } from "@/lib/store/useBasketStore";
+import BasketGrid from "@/components/basket/BasketGrid";
+
+import { XIcon } from "lucide-react";
 
 type BasketModalComponentType = {
     className?: string;
@@ -33,9 +35,7 @@ const BasketModal = ({ className = "" }: BasketModalComponentType) => {
             {/* content window START*/}
             <div
                 className={`${className} ${
-                    isBasketModalOpened
-                        ? "block h-screen"
-                        : "hidden"
+                    isBasketModalOpened ? "block h-screen" : "hidden"
                 } fixed z-50 items-center gap-4 bg-background py-6 px-2 sm:px-6 shadow-lg transition inset-y-0 right-0 w-full border-r sm:max-w-sm`}
             >
                 <XIcon

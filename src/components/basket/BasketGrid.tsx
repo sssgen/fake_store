@@ -1,8 +1,10 @@
-import { useBasketStore } from "@/lib/store/useBasketStore";
-import BasketGridItem from "./BasketGridItem";
-import Button from "../ui/Button";
 import Link from "next/link";
+
+import { useBasketStore } from "@/lib/store/useBasketStore";
 import getOverallPrice from "@/lib/utils/getOverallPrice";
+
+import BasketGridItem from "@/components/basket/BasketGridItem";
+import Button from "@/components/ui/Button";
 
 const BasketGrid = () => {
     const { goodsItems, setIsBasketModalOpened } = useBasketStore(

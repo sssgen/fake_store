@@ -1,4 +1,4 @@
-import { GoodsItemType } from "@/types/GoodsItem";
+import type { GoodsItemType } from "@/types/GoodsItem";
 
 export default function getOverallPrice(goodsItems: GoodsItemType[]) {
     let overall = 0;

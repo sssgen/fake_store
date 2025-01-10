@@ -1,6 +1,8 @@
-import { XIcon } from "lucide-react";
 import { memo } from "react";
+
 import GoodsGridItemContent from "@/components/goods-grid/goods-grid_item/GoodsGridItemContent";
+
+import { XIcon } from "lucide-react";
 
 type GoodsGreedItemModalComponentType = {
     className?: string;
@@ -31,9 +33,7 @@ const GoodsGreedItemModal = ({
             {/* content window START*/}
             <div
                 className={`${className} ${
-                    isOpened
-                        ? "h-[70vh]"
-                        : "hidden"
+                    isOpened ? "h-[70vh]" : "hidden"
                 } fixed flex flex-col z-50 items-center overflow-hidden bg-background py-6 px-2 sm:px-6 shadow-lg transition border-r sm:max-w-sm top-auto bottom-auto left-auto right-auto max-w-[95vw] min-w-[85vw] sm:min-w-[80vw]`}
             >
                 <XIcon

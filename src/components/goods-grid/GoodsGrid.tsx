@@ -1,6 +1,8 @@
-import GoodsGridItem from "./GoodsGridItem";
 import type { GoodsItemType } from "@/types/GoodsItem";
+
 import { getProducts } from "@/server/products/getProducts";
+
+import GoodsGridItem from "@/components/goods-grid/GoodsGridItem";
 
 type GoodsGridComponentType = {
     className?: string;

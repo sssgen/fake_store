@@ -1,7 +1,8 @@
 "use client";
+import { useEffect, useState } from "react";
+
 import { useBasketStore } from "@/lib/store/useBasketStore";
 import getOverallPrice from "@/lib/utils/getOverallPrice";
-import { useEffect, useState } from "react";
 
 const OverallComponents = () => {
     const { goodsItems } = useBasketStore((state) => state);

@@ -1,12 +1,13 @@
 "use client";
+import { useState } from "react";
 import type { GoodsItemType } from "@/types/GoodsItem";
 
-import { useState } from "react";
 import { useBasketStore } from "@/lib/store/useBasketStore";
 import { useGridItemStore } from "@/lib/store/useGridItemStore";
 
-import Button from "../ui/Button";
-import GoodsGridItemModal from "./goods-grid_item/GoodsGridItemModal";
+import Button from "@/components/ui/Button";
+import GoodsGridItemModal from "@/components/goods-grid/goods-grid_item/GoodsGridItemModal";
+
 import { CheckIcon, Package } from "lucide-react";
 
 type GoodsGridItemComponentType = GoodsItemType & {

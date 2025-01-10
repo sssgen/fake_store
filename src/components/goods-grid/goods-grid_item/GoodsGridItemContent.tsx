@@ -1,10 +1,14 @@
-import Button from "@/components/ui/Button";
-import { useGridItemStore } from "@/lib/store/useGridItemStore";
-import { PackageIcon } from "lucide-react";
 import { useState } from "react";
-import GoodsGridItemCounter from "./GoodsGridItemCounter";
+
+import { useGridItemStore } from "@/lib/store/useGridItemStore";
 import { useBasketStore } from "@/lib/store/useBasketStore";
+
 import type { GoodsItemType } from "@/types/GoodsItem";
+
+import GoodsGridItemCounter from "@/components/goods-grid/goods-grid_item/GoodsGridItemCounter";
+import Button from "@/components/ui/Button";
+
+import { PackageIcon } from "lucide-react";
 
 type GoodsGridItemContentComponentType = {
     className?: string;
@@ -51,7 +55,7 @@ const GoodsGridItemContent = ({
                     <GoodsGridItemCounter
                         count={countToAdd}
                         setCount={setCountToAdd}
-                        className="justify-center my-2 sm:my-0"
+                        className='justify-center my-2 sm:my-0'
                     />
                     <Button
                         className='w-full sm:max-w-[50%]'
