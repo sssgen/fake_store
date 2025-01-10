@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fake Store
 
-## Getting Started
+## Запустити
 
-First, run the development server:
+Щоб запустити потрібно зробити наступне:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Клонувати репозиторій
 ```
+git clone https://github.com/sssgen/fake-store.git
+```
+2. Встановити залежності
+```
+npm i
+```
+3. Запустити застосунок командою
+```
+npm run dev
+```
+4. Відкрийте лінк в браузері `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Сторінки, фічі
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Збудовано за допомогою Next.ts. Наступні сторінки демонструють певний функціонал
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Головна сторінка дозволяє отримати всі продукти із зовнішнього API
+* Сторінка замовлення є моковою та лише отримує інформацію про поточні замовлення в корзині, що далі можуть використовуватися для сплати
+* Має 2 модальні вікна - вікно товару та корзини. 
+* Інформація зберігається в localstorage, що не є безпечно (!)
 
-## Learn More
+## Документація
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Readme.md для опису функціоналу, загально по фічам та примітки розробника.
+* `.env` - локальні змінні середовища, мають бути ігноровані гітом. (Відкрив для демонстрації)
+* `.eslintrc.js` ESLint файл-конфіг для написання чистого коду
+* `.prettierrc` Prettier файл-конфіг для чистого коду та вірних відступів згідно синтаксису та best practices
+* `.fake-store__layout.tldr` Базовий дизайн, що допоміг зрозуміти структуру компонентів
+* Всі сторінки за шляхом `./src/app/(pages)`
+* Всі компоненти за шляхом `./src/components`
+* Серверні файли (робота з зовнішніми даними) за шляхом `./src/server`
+* Константи та типи за шляхами `./src/lib/consts.ts` та `./src/types`
+* Основна логіка frontend'у за шляхом `./src/lib`
+* Базові стилі за шляхом `./src/styles/globals.css`
